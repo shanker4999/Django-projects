@@ -1,0 +1,404 @@
+
+/*****************
+header
+*****************/
+header{
+	/*float: left;*/
+	margin: 0 0 30px 0;
+	padding: 10px 0 0 0;
+	width: 100%;
+/* To all the pages */
+}
+
+body{
+	background-color: #fff;
+	color: #0C3C26;
+}
+h1{
+	font-family: 'times new roman', sans-sharif;
+	margin: 10px 0;
+	font-size: 1.5em;
+	font-weight: normal;
+    color:#fff;
+}
+
+h3,h4,h5{
+	font-family: Palatino, "Palatino Linotype", "Book Antiqua", "Hoefler Text", Georgia, "Lucida Bright", Cambria, Times, "Times New Roman", serif;
+	margin: 5px 10px;
+	padding: 5px 5px;
+	font-weight: normal;
+    color: #0C3C26;
+	display: block;
+	line-height: 1.5em;
+	width: 80%;
+}
+
+a{
+	text-decoration:none;
+}
+img{
+	max-width: 100%;
+}
+
+nav{
+	/*text-align: center;*/
+	padding: 10px;
+
+}
+ nav ul{
+ 	list-style: none;
+
+ 	margin: 0 10px;
+ 	padding: 0;
+}
+nav li{
+	display: inline-block;
+}
+
+nav a{
+	font-weight: 800;
+	padding: 10px 15px;
+    margin: 10px;
+}
+
+header{
+	background: #6ab47b;
+	border-color:#599a68;
+}
+h1,h2{
+	color:#fff;
+}
+nav{
+	background: #699a68;
+}
+/* nav color white*/
+nav a,nav a:visited{
+	color: #fff
+}
+
+
+nav a.selected,nav a:hover{
+	background-color: #32673f;
+}
+ .selected{
+ 	max-width: 1080px;
+ }
+
+/*----------------End of General styleing----------------*/
+
+/**************************
+Heading
+***************************/
+.head1{
+	text-align:center;  /*this is heading conating shankar and desig*/
+	margin: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+	size:10px;
+}
+/* Question*/
+#choice li {
+    margin: 20px 20% 5px 20%;
+    padding: 10px 0 5px 5px;
+    color: #99ffcc;
+    list-style: none;
+
+}
+#choice li a {
+    color: #0C3C26;
+    line-height: 0em;
+}
+#choice li a:hover{
+    color: #6ab47b;
+}
+/*Voting page start */
+.quesoption {
+    margin: 10px 10% 5px 10%;
+    font-size: 20px;
+    color: #0C3C26;
+    border-radius: 5%;
+}
+#quesid {
+    width: 80%;
+    background-color:#6ab47b;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: "Roboto", Corbel, Avenir, "Lucida Grande", "Lucida Sans", sans-serif;
+
+
+}
+.radiochoice {
+    line-height: 1.7em;
+
+}
+.vote input{
+    margin: 0 10px 10px 10px;
+    padding: 10px;
+    background-color: #44B78B;
+    color: #fff;
+    border-radius: 10%;
+    width: 12%;
+    text-align: center;
+
+
+}
+/*answer block--------------------------------*/
+#ansh1{
+	font-family: 'Times New Roman', sans-sharif;
+	margin: 10px 10px;
+    padding: 20px;
+	font-size: 1.5em;
+	font-weight: normal;
+    color: #000000;
+    background-color: #99ffcc;
+    text-align: center;
+    border-radius: 1%;
+
+
+}
+
+#answerformat {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+    width: 70%;
+    list-style: none;
+    text-align: left;
+    line-height: 1.7em;
+}
+
+.voteagain{
+    margin-left: 10%;
+    margin-top: 20px;
+    display: inline-block;
+    background-color: #44B78B;
+    padding: 20px;
+    border-radius: 10%;
+}
+.voteagain a {
+    color: #fff;
+}
+/******************
+
+*******************/
+
+
+/***********************
+Page About
+*****************/
+#logo{
+	text-align:center;  /*this is heading conating shankar and desig*/
+	margin: 10px;
+	size:10px;
+}
+/*wrapper to image elements*/
+#wrapper{
+	max-width:1080px;
+	margin:auto;
+}
+
+
+.profile-photo{
+	max-width: 150px;
+	display: block;
+	margin: 0 auto 30px;
+	border-radius: 20%;
+}
+/******************
+page contact
+*******************/
+#secondary ul li h3{
+	line-height: .75em;
+}
+.contact-info{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 0.9em;
+}
+.contact-info a{
+	display: block;
+	min-height: 20px;
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	padding: 0 0 0 30px;
+	margin: 0 0 10px;
+}
+
+.contact-info li.phone a {
+	background-image: url('../img/phone.png');
+}
+.contact-info li.email a{
+	background-image: url('../img/mail.png');
+}
+/*________________end of contact page*****************/
+
+
+/******************
+footer elements
+*******************/
+
+
+footer{
+	font-size: 0.75em;
+	text-align: center;
+	clear: both;  /* do not float left and right*/
+	padding: 50px;
+	color: #ccc;
+}
+
+.social-info{
+	height: 20px;
+	width: 20px;
+	margin: 0 5px;
+}
+
+/* ---------------End of Footer-----------------------*/
+
+/***************************************
+Eduction details
+**************************************/
+table{
+	width: 70%;
+	margin: 40px auto 20px;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-left: 15%;
+    color: black;
+    font-size: 1.1em;
+
+
+}
+th, td {
+    padding: 5px;
+    text-align: center;
+}
+.table_prop {
+    width: 100%;
+    background-color: #99ffcc;
+}
+.h3_style{
+	font-family: "Times New Roman", Georgia, Serif;;
+	margin: 10px 100px;
+	font-size: 1.5em;
+	padding: 10px 100px;
+	font-weight: normal;
+	line-height: 1.2em;
+	color: black;
+	text-align: justify;
+	width: 70%;
+
+
+}
+
+/***********************************************
+Projects Page
+************************************************/
+#project_box{
+	margin: -30px 0 30px 0;
+	padding: 20px 0;
+	width: 100%;
+	float: left;
+	text-align: center;
+	background-color: #fff;
+	color: #0C3C26;
+}
+
+/* Designation color in h3*/
+.designation{
+	color: #0C3C26;
+	font-size: 1.8rem;
+
+}
+
+/*----------------End of projects---------------------------------------------
+
+
+
+/*-----------------------------------------------------------------
+Beginning of Hobbies
+/****************************************************************/
+#football{
+	margin:20px 0;
+	background-color: #44B78B;
+	text-align: center;
+	width: 100%;
+}
+#swimming{
+	margin:20px 0;
+	background-color: #44B78B;
+	text-align: center;
+	width: 100%;
+}
+
+
+/*************** END of hobbies*********************************/
+
+.dropbtn {
+    /*background-color: #4CAF50;*/
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: left;
+
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    padding: 10px 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #44B78B;;
+    min-width: 150px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+
+}
+
+/* Change color of dropdown links on hover */
+
+
+.dropdown-content a:hover
+{
+	background-color: #32673f;
+
+}
+.dropdown-content a.selected
+{
+	background-color: #32673f;
+}
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #32673f;
+}

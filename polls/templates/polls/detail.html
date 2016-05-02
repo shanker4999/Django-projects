@@ -1,0 +1,39 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'polls/normalize.css'%}"/>
+    <link href='https://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400,400italic,700,700italic,800italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="{% static 'polls/main.css'%}"/>
+	<meta charset="utf-8">
+    <title>Polls</title>
+</head>
+<body>
+    <header>
+        <div class="head1">
+            <h1>Welcome to Polls</h1>
+         </div>
+        <nav>
+            <a href="{% url 'index' %}">Home</a>
+            <a href="{% url 'contact' %}">Contact</a>
+        </nav>
+    </header>
+    <div class="quesoption">
+        <h1 id="quesid">{{question.question_test}}</h1>
+        <h5>Publish date :{{ question.pub_date }}</h5>
+        {% if error_message %}<p>{{ error_message }}</p> {% endif %}
+        <form action="{% url 'vote' question.id %}" method="post">
+            {% csrf_token %}
+            {% for choice in question.choice_set.all %}
+                <div class="radiochoice">
+                    <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}" />
+                    <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label> <br/>
+                 </div>
+             {% endfor %}<br/><br/>
+        <div class="vote">
+            <input type="submit" value="vote" />
+        </div>
+        </form>
+    </div>
+</body>
+</html>

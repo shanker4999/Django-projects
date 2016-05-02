@@ -1,0 +1,33 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+ <head>
+   <link rel="stylesheet" href="{% static 'polls/normalize.css'%}"/>
+   <link href='https://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400,400italic,700,700italic,800italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="{% static 'polls/main.css'%}"/>
+	<meta charset="utf-8">
+    <title>Polls</title>
+</head>
+<body>
+    <header>
+        <div class="head1">
+            <h1>Welcome to Polls</h1>
+         </div>
+        <nav>
+            <a href="{% url 'index' %}" class="visited">Home</a>
+            <a href="{% url 'contact' %}">Contact</a>
+        </nav>
+    </header>
+    <section>
+        {% if latest_question_list %}
+            <ul id="choice">
+                {% for question in latest_question_list %}
+                    <li><a href="/polls/{{ question.id }}/">{{ question.question_test }}</a></li>
+                {%  endfor %}
+            </ul>
+                {% else %}
+                    <h2>No question are available</h2>
+                {% endif %}
+   </section>
+</body>
+</html>
